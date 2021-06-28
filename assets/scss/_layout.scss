@@ -1,0 +1,43 @@
+html,
+body {
+  height: 100%;
+  font-size: #{($browser-context) + px};
+  @media (max-width: $small) {
+    font-size: 12px;
+  }
+}
+
+body {
+  font-family: $font-texting;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: rem(48);
+}
+
+.main {
+  margin: 30px 0;
+}
+
+// Temporary basic container
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @media (min-width: $middle) {
+    max-width: 800px;
+  }
+  @media (min-width: $tablet) {
+    max-width: 1020px;
+  }
+  @media (min-width: $desktop) {
+    max-width: 1180px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

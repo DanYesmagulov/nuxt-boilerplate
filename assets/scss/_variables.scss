@@ -1,0 +1,51 @@
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+$browser-context: 16;
+
+// fonts
+$font-heading: "Styrene A Web", Arial, sans-serif;
+$font-texting: "PT Root UI", Arial, sans-serif;
+
+// colors
+$color-accent: #2e91ff;
+$color-accent-light: #3eadfd;
+$color-main: #2f3b57;
+$color-secondary: #3d42d6;
+$color-secondary-dark: #272a81;
+$color-second: #8991a3;
+$color-stroke: #cbd3eb;
+$color-sl-stroke: #eff2f9;
+$color-dropdowns: #eeeef2;
+$color-success: #29b9a3;
+$color-process: #f5b91f;
+$color-failure: #f75566;
+$color-white: #fff;
+
+// outline
+$outline-shadow: 3px 2px 22px -6px rgba(0, 0, 0, 0.75);
+
+// transitions
+$transition-primary: 0.3s;
+
+$imgBase: "../images/";
+
+$small: 560px;
+$middle: 760px;
+$tablet: 1000px;
+$laptop: 1170px;
+$desktop: 1300px;
+$wide: 1400px;
+$large: 1800px;
+
+// breakpoints
+$xs: 380px;
+$sm: 560px;
+$smd: 780px;
+$md: 1000px;
+$slg: 1025px;
+$lg: 1285px;
+$xlg: 1370px;
+$xxlg: 1445px;
+$xxxlg: 1925px;

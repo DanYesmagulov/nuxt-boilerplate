@@ -1,0 +1,16 @@
+@mixin font($alias, $name, $weight) {
+  @font-face {
+    font-family: $alias;
+    src: url("../fonts/" + $name + ".woff2") format("woff2"), url("../fonts/" + $name + ".woff") format("woff"),
+      url("../fonts/" + $name + ".ttf") format("truetype"), url("../fonts/" + $name + ".eot"),
+      url("../fonts/" + $name + ".eot?#iefix") format("embedded-opentype");
+    font-weight: $weight;
+    font-display: swap;
+  }
+}
+
+/**
+Mixin example
+@include font('Poppins', 'Poppins-Regular', 400);
+@include font('Poppins', 'Poppins-Bold', 700);
+*/
